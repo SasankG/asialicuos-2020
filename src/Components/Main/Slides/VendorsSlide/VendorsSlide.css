@@ -1,0 +1,30 @@
+.VendorsSlide{
+    padding-top: 90px;
+    background-color: lightblue;
+    height: 90vh;
+    display: flex;
+}
+
+/* Media Queries */
+/* - Desktops */
+@media (min-width: 1281px) {
+
+    
+}
+
+/* - Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    
+}
+
+/* - Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .VendorsSlide{
+        padding-top: 80px;
+    }
+
+}
+
+/* Media Queries - End*/

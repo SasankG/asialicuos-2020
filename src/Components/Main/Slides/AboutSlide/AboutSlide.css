@@ -1,0 +1,44 @@
+.AboutSlide{
+    padding-top: 10px;
+    background-color: #eeeeee;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.AboutSlide-TextBox-Blurb{
+    max-width: 500px;
+}
+
+/* Media Queries */
+/* - Desktops */
+@media (min-width: 1281px) {
+
+    
+}
+
+/* - Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .navbar{
+        height: 100px;
+        transition: all 0.2s;
+    }
+    
+    .navbar-small{
+        height: 80px;
+    }
+    
+}
+
+/* - Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .AboutSlide-TextBox-Blurb{
+        max-width: 300px;
+    }
+    
+}
+
+/* Media Queries - End*/

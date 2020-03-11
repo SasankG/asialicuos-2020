@@ -1,0 +1,16 @@
+.IntroSlide{
+    padding-top: 100px;
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#IntroSlide-TextBox-Title{
+    font-size: 5vw;
+}
+
+#IntroSlide-TextBox-SubTitle{
+    font-size: 2vw;
+}
