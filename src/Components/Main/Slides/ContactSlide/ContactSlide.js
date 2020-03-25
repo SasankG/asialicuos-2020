@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import './ContactSlide.css'
-import '../Slides.css'
+import React, { Component } from "react";
+import "./ContactSlide.css";
+import "../Slides.css";
 
 // Contact Component
 // - contains:
@@ -8,127 +8,110 @@ import '../Slides.css'
 //      - TODO: add funcitonality to contact form
 
 export default class ContactSlide extends Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props)
+    this.state = {
+      contactName: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: ""
+    };
+  }
 
-        this.state = {
+  updateField(fieldName, event) {
+    const { value } = event.target;
+    // sanitization can be done here
 
-            contactName: '',
-            email: '',
-            number: '',
-            subject: '',
-            message: ''
+    this.setState(prevState => {
+      const newState = { ...prevState };
+      newState[fieldName] = value;
+      return newState;
+    });
+  }
 
-        }
+  handleSubmit(e) {
+    e.preventDefault();
 
-    }
+    console.log(this.state);
 
-    nameUpdate(e) {
-        this.setState({
-            contactName: e.target.value
-        })
-    }
+    // TODO: send email, figure it out Anthony
 
-    emailUpdate(e) {
-        this.setState({
-            email: e.target.value
-        })
-    }
+    // clear state after you send the email
+    this.setState({
+      contactName: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: ""
+    });
+  }
 
-    numberUpdate(e) {
-        this.setState({
-            number: e.target.value
-        })
-    }
+  // ===== Renders =====
 
-    messageUpdate(e) {
-        this.setState({
-            message: e.target.value
-        })
-    }
+  // Text Area renders and their wrappers
+  renderInput = (type, fieldName, placeholder, isRequired) => (
+    <input
+      type={type}
+      className="form-control"
+      id={fieldName}
+      placeholder={placeholder}
+      value={this.state[fieldName]}
+      onChange={this.updateField.bind(this, fieldName)}
+      required={isRequired}
+    />
+  );
 
-    subjectUpdate(e) {
-        this.setState({
-            subject: e.target.value
-        })
-    }
+  renderInputContactName = () => this.renderInput("text", "contactName", "Contact Name", true);
+  renderInputEmail = () => this.renderInput("email", "email", "Email", true);
+  renderInputPhoneNumber = () => this.renderInput("tel", "number", "Phone Number", false);
+  renderInputSubject = () => this.renderInput("text", "subject", "Subject", true);
 
+  // Text Area renders and their wrappers
+  renderTextArea = (rows, fieldName, placeholder) => (
+    <textarea
+      className="form-control"
+      id={fieldName}
+      placeholder={placeholder}
+      rows={rows}
+      value={this.state[fieldName]}
+      onChange={this.updateField.bind(this, fieldName)}
+    ></textarea>
+  );
 
-    handleSubmit(e) {
+  renderTextAreaMessage = () => this.renderTextArea("8", "message", "Message");
 
-        e.preventDefault();
+  render() {
+    return (
+      <div className="Slide">
+        <div className="ContactSlide" id="Contact">
+          <div className="ContactSlide-TextBox-TitleBox">
+            <p className="ContactSlide-TextBox-Title">Contact</p>
+            <p className="styleLines">______________________________</p>
+          </div>
 
-        console.log(this.state)
+          <form className="ContactSlide-ContactForm" onSubmit={e => this.handleSubmit(e)}>
+            <div className="form-row col-lg-12">
+              <div className="form-group col-md-4">{this.renderInputContactName()}</div>
+              <div className="form-group col-md-4">{this.renderInputEmail()}</div>
+              <div className="form-group col-md-3">{this.renderInputPhoneNumber()}</div>
 
-        // TODO: send email, figure it out Anthony
+              <div className="form-group col-md-12">{this.renderInputSubject()}</div>
+              <div className="form-group col-md-12">{this.renderTextAreaMessage()}</div>
 
-        // clear state after you send the email
-        this.setState({
-            contactName: '',
-            email: '',
-            number: '',
-            subject: '',
-            message: ''
-        })
+              <br />
+              <br />
 
-    }
-
-    render() {
-        return (
-            <div>
-
-                <div className="Slide">
-
-                    <div className="ContactSlide" id="Contact">
-
-                        <div className="ContactSlide-TextBox-TitleBox">
-
-                            <p className="ContactSlide-TextBox-Title">Contact</p>
-                            <p className="styleLines">______________________________</p>
-
-                        </div>
-
-                        <div className="ContactSlide-ContactForm">
-                            <form onSubmit={(e) => this.handleSubmit(e)}>
-                                <div className="form-row col-lg-12">
-
-                                    <div className="form-group col-md-4">
-                                        <input type="text" className="form-control" id="contactName" placeholder="Contact Name" value={this.state.contactName} onChange={(e) => this.nameUpdate(e)} required />
-                                    </div>
-
-                                    <div className="form-group col-md-4">
-                                        <input type="email" className="form-control" id="email" placeholder="Email" value={this.state.email} onChange={(e) => this.emailUpdate(e)} required />
-                                    </div>
-
-                                    <div className="form-group col-md-3">
-                                        <input type="tel" className="form-control" id="number" placeholder="Phone Number" value={this.state.number} onChange={(e) => this.numberUpdate(e)} />
-                                    </div>
-
-                                    <div className="form-group col-md-12">
-                                        <input type="text" className="form-control" id="subject" placeholder="Subject" value={this.state.subject} onChange={(e) => this.subjectUpdate(e)} required />
-                                    </div>
-
-                                    <div className="form-group col-md-12">
-                                        <textarea className='form-control' id="message" placeholder='Message' rows='8' value={this.state.message} onChange={(e) => this.messageUpdate(e)}></textarea>
-                                    </div>
-
-                                    <br />
-                                    <br />
-
-                                    <div className='col text-center'>
-                                        <button type="submit" className="btn" id="submitButton">Submit</button>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <div className="col text-center">
+                <button type="submit" className="btn" id="submitButton">
+                  Submit
+                </button>
+              </div>
             </div>
-        )
-    }
+          </form>
+        </div>
+      </div>
+    );
+  }
 }
