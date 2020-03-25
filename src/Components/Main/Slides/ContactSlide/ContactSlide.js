@@ -6,7 +6,6 @@ import "../Slides.css";
 // - contains:
 //      - contact form
 //      - TODO: add funcitonality to contact form
-
 export default class ContactSlide extends Component {
   constructor(props) {
     super(props);
@@ -33,8 +32,7 @@ export default class ContactSlide extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
-    console.log(this.state);
+    console.log("Submission state", this.state);
 
     // TODO: send email, figure it out Anthony
 
@@ -82,6 +80,13 @@ export default class ContactSlide extends Component {
 
   renderTextAreaMessage = () => this.renderTextArea("8", "message", "Message");
 
+  // Button type renders. Wrapper not needed atm
+  renderButtonSubmit = () => (
+    <button type="submit" className="btn" id="submitButton">
+      Submit
+    </button>
+  );
+
   render() {
     return (
       <div className="Slide">
@@ -100,14 +105,7 @@ export default class ContactSlide extends Component {
               <div className="form-group col-md-12">{this.renderInputSubject()}</div>
               <div className="form-group col-md-12">{this.renderTextAreaMessage()}</div>
 
-              <br />
-              <br />
-
-              <div className="col text-center">
-                <button type="submit" className="btn" id="submitButton">
-                  Submit
-                </button>
-              </div>
+              <div className="col text-center">{this.renderButtonSubmit()}</div>
             </div>
           </form>
         </div>
