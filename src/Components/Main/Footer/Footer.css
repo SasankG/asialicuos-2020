@@ -9,6 +9,11 @@
 /* - Desktops */
 @media (min-width: 1281px) {
 
+    .Footer-Email {
+        color: white;
+        font-size: large;
+    }
+
     .Footer-Links{
         display: flex;
         flex-direction: row;
