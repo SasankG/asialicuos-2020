@@ -1,16 +1,83 @@
 .IntroSlide{
-    padding-top: 100px;
-    background-color: aliceblue;
-    height: 100vh;
+    background-image: url('../../../../Assets/Images/AsialiciousWebsiteFront.jpg');
+    background-size: 100%;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-#IntroSlide-TextBox-Title{
-    font-size: 5vw;
+
+
+/* Media Queries */
+/* - Desktops */
+@media (min-width: 1281px) {
+    
+    .IntroSlide-TextBox{
+        border-top: 10px solid;
+        border-bottom: 10px solid;
+    }
+
+    #IntroSlide-TextBox-Title{
+        font-size: 60pt;
+    }
+    
+    #IntroSlide-TextBox-SubTitle{
+        font-size: 20pt;
+    }
+    
+    .IntroSlide-Poster{
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
-#IntroSlide-TextBox-SubTitle{
-    font-size: 2vw;
+/* - Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .IntroSlide-TextBox{
+        border-top: 10px solid;
+        border-bottom: 10px solid;
+    }
+
+    #IntroSlide-TextBox-Title{
+        font-size: 60pt;
+    }
+    
+    #IntroSlide-TextBox-SubTitle{
+        font-size: 20pt;
+    }
+
 }
+
+/* - Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .IntroSlide{
+        margin-top: 60px;
+        align-content: center;
+    }
+    .IntroSlide-Poster{
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .IntroSlide-TextBox{
+        border-top: 4px solid;
+        border-bottom: 4px solid;
+    }
+
+    #IntroSlide-TextBox-Title{
+        font-size: 20pt;
+    }
+    
+    #IntroSlide-TextBox-SubTitle{
+        font-size: 10pt;
+    }
+
+}
+
+/* Media Queries - End*/

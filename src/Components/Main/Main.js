@@ -6,6 +6,8 @@ import AboutSlide from './Slides/AboutSlide/AboutSlide';
 import SponsorsSlide from './Slides/SponsorsSlide/SponsorsSlide';
 import VendorsSlide from './Slides/VendorsSlide/VendorsSlide';
 import ContactSlide from './Slides/ContactSlide/ContactSlide';
+import Footer from './Footer/Footer';
+import LandingPage from './LandingPage/LandingPage';
 
 // Main Webpage Component
 //  - This component contains the entirety of the webpage
@@ -16,13 +18,15 @@ export default class Main extends Component {
     render() {
         return (
             <div>
+                {/* <LandingPage/> */}
                 <Navbar />
                 <div data-spy="scroll" data-target="navbar fixed-top navbar-expand-lg shadow-sm p-3 mb-5 navbar-small" data-offset="0">
                     <IntroSlide />
                     <AboutSlide />
-                    <SponsorsSlide />
                     <VendorsSlide />
+                    <SponsorsSlide />
                     <ContactSlide />
+                    <Footer/>
                 </div>
             </div>
         )

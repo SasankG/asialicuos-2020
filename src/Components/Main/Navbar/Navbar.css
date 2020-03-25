@@ -16,7 +16,6 @@
     font-size: 12pt;
     margin: 2px;
     transition: all 0.2s;
-
 }
 
 
@@ -80,9 +79,17 @@
         background-color: #ed038c;
     }
 
+    .nav-link{
+        border-bottom: 2px white solid;
+        border-top: 2px white solid;
+    }
+
     .nav-link:hover{
-        color:darkgrey;
-    }    
+        color:#4d4d4d;
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+    }  
+      
     
 }
 
@@ -101,10 +108,17 @@
     .navlogo:hover{
         background-color: #ed038c;
     }   
-    
+
+    .nav-link{
+        border-bottom: 2px white solid;
+        border-top: 2px white solid;
+    }
+
     .nav-link:hover{
-        color:darkgrey;
-    }    
+        color:#4d4d4d;
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+    }      
 
 }
 

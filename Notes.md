@@ -55,6 +55,7 @@
         - **needs** social media links
             - IG, WeChat, Twitter, FB
         - **needs** email
+            - email: info@asialiciousto.com
 
 --------------------------------
 
@@ -64,4 +65,5 @@
     - Adjust form for mobile devices
 - add missing media, pictures, etc
 - add social media links
+- create contact form
 - connect to Google Sheets API

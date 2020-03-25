@@ -1,0 +1,10 @@
+.LandingPage-Main{
+    max-height: 100vh;
+}
+
+.LandingPage-PosterBox-ImageBox{
+    height: 90vh;
+    background-image: url('../../../Assets/Images/AsialiciousWebsiteFront.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

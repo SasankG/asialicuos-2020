@@ -9,7 +9,51 @@ import '../Slides.css'
 //      - all retrieved restaurents are stores in the VendorsSlide-VendorList div 
 
 export default class VendorsSlide extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isBeta: true
+        }
+
+    }
+
     render() {
+
+        let form;
+
+        if (this.state.isBeta === true) {
+
+            form =
+
+            <div className="Coming Soon">
+                Coming Soon!
+            </div>
+
+        } else {
+
+            form =
+                <div className='card form-card' >
+                    <p className="VendorsSlide-TextBox-CardTitle">Search Vendors</p>
+                    <form>
+                        <div className="form-group">
+                            <label for="restaurent-name">Restaurent Name</label>
+                            <input type="text" className="form-control" id="restaurent-name"></input>
+                        </div>
+                        <div className="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" className="form-control" id="location"></input>
+                        </div>
+                        <div className="form-group">
+                            <label for="location">Price</label>
+                            <input type="text" className="form-control" id="location"></input>
+                        </div>
+                    </form>
+                </div>
+
+        }
+
         return (
             <div>
 
@@ -21,32 +65,11 @@ export default class VendorsSlide extends Component {
 
                             <div className="VendorsSlide-TextBox-TitleBox">
                                 <p className="VendorsSlide-TextBox-Title">Vendors</p>
+                                <p className="styleLines">______________________________</p>
                             </div>
 
                             <div className="VendorsSlide-VendorFormBox">
-                                <div className="card">
-                                    <div className="card-body">
-                                        
-                                        {/* TODO:
-                                        - create form that queries Google Sheet */}
-                                        <p className="VendorsSlide-TextBox-Title card-title">Search Vendors</p>
-
-                                        <form>
-                                            <div className="form-group">
-                                                <label for="restaurent-name">Restaurent Name</label>
-                                                <input type="text" className="form-control" id="restaurent-name"></input>
-                                            </div>
-                                            <div className="form-group">
-                                                <label for="location">Location</label>
-                                                <input type="text" className="form-control" id="location"></input>
-                                            </div>
-                                            <div className="form-group">
-                                                <label for="location">Price</label>
-                                                <input type="text" className="form-control" id="location"></input>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                                {form}
                             </div>
 
                         </div>
@@ -64,7 +87,7 @@ export default class VendorsSlide extends Component {
                 </div>
 
 
-            </div>
+            </div >
         )
     }
 }

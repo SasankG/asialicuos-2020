@@ -1,44 +1,94 @@
 .AboutSlide{
-    padding-top: 10px;
-    background-color: #eeeeee;
-    height: 90vh;
+    background-image: url('../../../../Assets/Images/whitecloud.png');
+    background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.AboutSlide-TextBox-Blurb{
-    max-width: 500px;
-}
 
 /* Media Queries */
 /* - Desktops */
 @media (min-width: 1281px) {
 
+    .AboutSlide-TextBox-TitleBox{
+        border-bottom: solid 4px #ed038c;
+        margin-bottom: 20px;
+    }
+
+    #AboutSlide-TextBox-Title{
+        font-size: 32pt;
+        font-weight: 500;
+    }
+
+    .AboutSlide-TextBox-Blurb{
+        max-width: 800px;
+        font-size: 14pt;
+        text-align: left;
+    }
+
+    .AboutSlide-Decal{
+        max-height: 200px;
+    }
     
 }
 
 /* - Laptops */
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    .navbar{
-        height: 100px;
-        transition: all 0.2s;
+    .AboutSlide-TextBox-TitleBox{
+        border-bottom: solid 4px #ed038c;
+        margin-bottom: 20px;
     }
-    
-    .navbar-small{
-        height: 80px;
+
+    #AboutSlide-TextBox-Title{
+        font-size: 32pt;
+        font-weight: 500;
     }
-    
+
+    .AboutSlide-TextBox-Blurb{
+        max-width: 800px;
+        font-size: 14pt;
+        text-align: left;
+    }
+
+    .AboutSlide-Decal{
+        max-height: 200px;
+    }
+
+    .styleLines{
+        text-align: center;
+    }
+
 }
 
 /* - Phones */
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
+    .AboutSlide{
+        padding-top: 10%;
+        height: 140vh;
+    }
+
+    .AboutSlide-TextBox-TitleBox{
+        border-bottom: solid 2px #ed038c;
+        margin-bottom: 20px;
+    }
+
+    #AboutSlide-TextBox-Title{
+        font-size: 20pt;
+    }
+
     .AboutSlide-TextBox-Blurb{
         max-width: 300px;
+        font-size: 12pt;
     }
     
+    .AboutSlide-Decal{
+        max-height: 100px;
+    }
+
 }
 
 /* Media Queries - End*/
