@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import "./ContactSlide.css";
 import "../Slides.css";
+import EmailHelper from "./emailHelper";
 
 // Contact Component
 // - contains:
@@ -34,7 +36,8 @@ export default class ContactSlide extends Component {
     e.preventDefault();
     console.log("Submission state", this.state);
 
-    // TODO: send email, figure it out Anthony
+    const { contactName, email, number, subject, message } = this.state;
+    EmailHelper.sendEmail(email, "Asialicious Employee", subject, message);
 
     // clear state after you send the email
     this.setState({
