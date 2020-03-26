@@ -50,7 +50,31 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .Footer{
-        height: 5vh;
+        height: 10vh;
+        position: fixed;
+        width: 100%;
+    }
+
+    .Footer-Email {
+        color: white;
+        font-size: large;
+    }
+
+    .Footer-Links{
+        display: flex;
+        flex-direction: row;
+    }
+
+    i{
+        color: white;
+        padding: 10px;
+        font-size: 20pt;
+    }
+
+    i:hover{
+        color: #ed038c;
+        background-color: white;
+        border-radius: 40px;
     }
 
 }

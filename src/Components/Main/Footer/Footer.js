@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <div className="Footer">
-        <div className="Footer-Email">info@asialiciousto.com</div>
+        <div><a href = "mailto:info@asialiciousto.com" className="Footer-Email">info@asialiciousto.com</a></div>
         <div className="Footer-Links">
           <div className="Footer-Instagram">
             <i className="fab fa-instagram"></i>
