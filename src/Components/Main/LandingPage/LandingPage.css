@@ -4,10 +4,15 @@
 }
 
 .LandingPage-PosterBox-ImageBox{
-    height: 90vh;
     background-image: url('../../../Assets/Images/AsialiciousWebsiteFront.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.LandingPage-HomeBtn:hover{
+    background-color: white;
+    color: #ed038c;
+    border: solid 1px #ed038c;
 }
 
 /* Media Queries */
@@ -15,10 +20,32 @@
 @media (min-width: 1281px) {
 
     .LandingPage-Main{
+        height: 100vh;
         max-height: 100vh;
         background-image: url('../../../Assets/Images/whitecloud.png');
         background-repeat: no-repeat;
         background-size: 200%;
+    }
+
+    .LandingPage-Footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .LandingSlide-Poster{
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .LandingPage-HomeBtn{
+        background-color: #ed038c;
+        color: white;
+        font-size: 16pt;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 100px; 
+        margin-top: 10%;
     }
 
 }
@@ -27,10 +54,32 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
 
     .LandingPage-Main{
+        height: 100vh;
         max-height: 100vh;
         background-image: url('../../../Assets/Images/whitecloud.png');
         background-repeat: no-repeat;
         background-size: 200%;
+    }
+
+    .LandingPage-Footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .LandingSlide-Poster{
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .LandingPage-HomeBtn{
+        background-color: #ed038c;
+        color: white;
+        font-size: 16pt;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 100px; 
+        margin-top: 10%;
     }
 
 }
@@ -39,16 +88,32 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .LandingPage-Main{
+        height: 100vh;
         max-height: 100vh;
         background-image: url('../../../Assets/Images/whitecloud.png');
         background-size: 400%;
     }
     
-    .LandingPage-PosterBox-ImageBox{
-        height: 90vh;
-        background-image: url('../../../Assets/Images/AsialiciousWebsiteFront.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
+    .LandingPage-Footer{
+        height: 10vh;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .LandingSlide-Poster{
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .LandingPage-HomeBtn{
+        background-color: #ed038c;
+        color: white;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 100px; 
+        margin-top: 50%;
     }
 
 }

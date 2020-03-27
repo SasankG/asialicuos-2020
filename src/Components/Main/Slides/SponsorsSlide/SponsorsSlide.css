@@ -11,8 +11,10 @@
 @media (min-width: 1281px) {
 
     .SponsorsSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 30pt;
         font-weight: 500;
+        font-family: 'Poppins', sans-serif;
     }
 
     .SponsorsSlide-SponsorBox{
@@ -31,9 +33,10 @@
     
     
     .SponsorsSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 30pt;
         font-weight: 500;
-
+        font-family: 'Poppins', sans-serif;
     }
 
     .SponsorsSlide-SponsorBox{
@@ -56,8 +59,10 @@
      }
 
     .SponsorsSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 26pt;
         font-weight: 500;
+        font-family: 'Poppins', sans-serif;
     }
 
     .SponsorsSlide-SponsorBox{

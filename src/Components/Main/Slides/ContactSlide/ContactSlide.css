@@ -35,8 +35,10 @@
 @media (min-width: 1281px) {
     
     .ContactSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 30pt;
         font-weight: 500;
+        font-family: 'Poppins', sans-serif;
     }
 
     .ContactSlide-ContactForm{
@@ -52,8 +54,10 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
     
     .ContactSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 30pt;
         font-weight: 500;
+        font-family: 'Poppins', sans-serif;
     }
 
     .ContactSlide-ContactForm{
@@ -69,8 +73,10 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .ContactSlide-TextBox-Title{
+        color: #6f0138;
         font-size: 26pt;
         font-weight: 500;
+        font-family: 'Poppins', sans-serif;
     }
 
     

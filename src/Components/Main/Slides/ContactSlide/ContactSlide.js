@@ -95,7 +95,7 @@ export default class ContactSlide extends Component {
       <div className="Slide">
         <div className="ContactSlide" id="Contact">
           <div className="ContactSlide-TextBox-TitleBox">
-            <p className="ContactSlide-TextBox-Title">Contact</p>
+            <p className="ContactSlide-TextBox-Title">Contact Us</p>
             <p className="styleLines">______________________________</p>
           </div>
 
