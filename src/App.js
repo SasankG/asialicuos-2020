@@ -9,13 +9,10 @@ import {
 import './App.css';
 
 
-
-
-
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Route exact path='/' component={LandingPage} />
           <Route path='/home' component={Main} />
