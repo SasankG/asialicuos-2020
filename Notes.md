@@ -67,3 +67,4 @@
 - add social media links
 - create contact form
 - connect to Google Sheets API
+- make sure to avoid force resolutions on build deployment
