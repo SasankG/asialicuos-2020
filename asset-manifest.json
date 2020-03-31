@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/asialicuos-2020/static/css/main.8f433f89.chunk.css",
+    "main.js": "/asialicuos-2020/static/js/main.0f186baf.chunk.js",
+    "main.js.map": "/asialicuos-2020/static/js/main.0f186baf.chunk.js.map",
+    "runtime-main.js": "/asialicuos-2020/static/js/runtime-main.253b4426.js",
+    "runtime-main.js.map": "/asialicuos-2020/static/js/runtime-main.253b4426.js.map",
+    "static/js/2.b861633e.chunk.js": "/asialicuos-2020/static/js/2.b861633e.chunk.js",
+    "static/js/2.b861633e.chunk.js.map": "/asialicuos-2020/static/js/2.b861633e.chunk.js.map",
+    "index.html": "/asialicuos-2020/index.html",
+    "precache-manifest.77d23b3b69234cd648c2e47d27fae7c7.js": "/asialicuos-2020/precache-manifest.77d23b3b69234cd648c2e47d27fae7c7.js",
+    "service-worker.js": "/asialicuos-2020/service-worker.js",
+    "static/css/main.8f433f89.chunk.css.map": "/asialicuos-2020/static/css/main.8f433f89.chunk.css.map",
+    "static/js/2.b861633e.chunk.js.LICENSE.txt": "/asialicuos-2020/static/js/2.b861633e.chunk.js.LICENSE.txt",
+    "static/media/AsialiciousDecal02.png": "/asialicuos-2020/static/media/AsialiciousDecal02.f1389e0b.png",
+    "static/media/IntroSlide.css": "/asialicuos-2020/static/media/AsialiciousWebsiteFront.f2800c2e.jpg",
+    "static/media/logo-grey.png": "/asialicuos-2020/static/media/logo-grey.a4e89727.png",
+    "static/media/logo-pink.png": "/asialicuos-2020/static/media/logo-pink.06e6dd9d.png",
+    "static/media/ContactSlide.css": "/asialicuos-2020/static/media/whitecloud.3959d339.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.253b4426.js",
+    "static/js/2.b861633e.chunk.js",
+    "static/css/main.8f433f89.chunk.css",
+    "static/js/main.0f186baf.chunk.js"
+  ]
+}
